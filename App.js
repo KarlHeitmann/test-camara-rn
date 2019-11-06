@@ -8,13 +8,37 @@
 
 import React from 'react';
 
+// import { createSwitchNavigator } from 'react-navigation'
+import { createStackNavigator } from 'react-navigation-stack';
+import { createAppContainer } from 'react-navigation';
+
 import Pagina from "./src/pagina"
 import Camara from "./src/camara"
+
+const MainNavigator = createStackNavigator(
+  {
+    Pagina,
+    Camara
+    // Loading: Loading,
+  },
+  // {
+  //   initialRouteName: 'Login'
+  // }
+  {
+    // headerMode: 'none',
+    // initialRouteName: 'Loading',
+    //navigationOptions: {
+    //  headerVisible: false,
+    //}
+  }
+)
+
+const AppNavigator = createAppContainer(MainNavigator)
 
 class App extends React.Component{
   render(){
     return(
-      <Camara/>
+      <AppNavigator/>
     )
   }
 }
