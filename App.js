@@ -26,7 +26,7 @@ const MainNavigator = createStackNavigator(
   // }
   {
     // headerMode: 'none',
-    // initialRouteName: 'Loading',
+     initialRouteName: 'Pagina',
     //navigationOptions: {
     //  headerVisible: false,
     //}

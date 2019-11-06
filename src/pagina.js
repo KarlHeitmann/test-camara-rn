@@ -20,6 +20,7 @@ import {
 class Pagina extends React.Component {
   _onPressButton = () => {
     console.log("Hola")
+    this.props.navigation.navigate("Camara")
   } 
   render(){
     const titulo = "Max Qlo pesao"
