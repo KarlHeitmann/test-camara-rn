@@ -8,13 +8,14 @@
 
 import React from 'react';
 
-import Pagina from "./src/pagina.js"
+import Pagina from "./src/pagina"
+import Camara from "./src/camara"
 
 class App extends React.Component{
   render(){
     return(
-      <Pagina/>
-      )
+      <Camara/>
+    )
   }
 }
 
