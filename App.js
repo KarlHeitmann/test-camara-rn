@@ -19,17 +19,9 @@ const MainNavigator = createStackNavigator(
   {
     Pagina,
     Camara
-    // Loading: Loading,
   },
-  // {
-  //   initialRouteName: 'Login'
-  // }
   {
-    // headerMode: 'none',
      initialRouteName: 'Pagina',
-    //navigationOptions: {
-    //  headerVisible: false,
-    //}
   }
 )
 
